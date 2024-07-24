@@ -1,16 +1,16 @@
 {
-  "name": "react-pwa",
+  "name": "Privatefunction",
   "version": "2.3.0",
   "type": "module",
-  "description": "Starter kit for modern web applications",
-  "homepage": "https://react-pwa.surenatoyan.com/",
+  "description": "Personal Website",
+  "homepage": "https://privatefunction.net",
   "repository": {
     "type": "git",
-    "url": "https://github.com/suren-atoyan/react-pwa.git"
+    "url": "https://github.com/HSchreier/www.privatefunction.net.git"
   },
   "bugs": {
-    "url": "https://github.com/suren-atoyan/react-pwa/issues",
-    "email": "contact@surenatoyan.com"
+    "url": "https://github.com/HSchreier/www.privatefunction.net/issues",
+    "email": "contact@privatefunction.net"
   },
   "license": "MIT",
   "scripts": {
@@ -34,6 +34,10 @@
     "@mui/material": "^5.15.0",
     "@mui/system": "^5.15.0",
     "@mui/utils": "^5.15.0",
+    "@tsparticles/confetti": "^3.5.0",
+    "@tsparticles/engine": "^3.5.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.5.0",
     "is-mobile": "^4.0.0",
     "notistack": "^3.0.1",
     "react": "^18.2.0",
@@ -72,6 +76,10 @@
     "src/**/*.{js,jsx,ts,tsx,json}": [
       "eslint --max-warnings=0"
     ]
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": ["warn"]
   },
   "author": {
     "name": "Suren Atoyan",

@@ -6,6 +6,7 @@ import { loadSlim } from '@tsparticles/slim';
 import Meta from '@/components/Meta';
 import { FullSizeCenteredFlexBox } from '@/components/styled';
 import useOrientation from '@/hooks/useOrientation';
+import Typography from '@mui/material/Typography';
 
 function Welcome() {
   const isPortrait = useOrientation();
@@ -105,6 +106,7 @@ function Welcome() {
       <>
         <Meta title="Welcome" />
         <FullSizeCenteredFlexBox flexDirection={isPortrait ? 'column' : 'row'}>
+          <Typography variant="h3">Comming Soon ....</Typography>
           <Particles
             id="tsparticles"
             particlesLoaded={particlesLoaded}

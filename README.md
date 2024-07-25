@@ -1,3 +1,5 @@
+[![Depfu](https://badges.depfu.com/badges/0e245a832d966b2e8180ec9a0ce334b5/status.svg)](https://depfu.com)
+[![Depfu](https://badges.depfu.com/badges/0e245a832d966b2e8180ec9a0ce334b5/overview.svg)](https://depfu.com/github/HSchreier/www.privatefunction.net?project_id=42679)
 [![Analyses](https://github.com/suren-atoyan/react-pwa/actions/workflows/analyses.yml/badge.svg)](https://github.com/suren-atoyan/react-pwa/actions/workflows/analyses.yml)
 [![E2E Tests](https://github.com/suren-atoyan/react-pwa/actions/workflows/tests:e2e.yml/badge.svg)](https://github.com/suren-atoyan/react-pwa/actions/workflows/tests:e2e.yml)
 

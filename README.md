@@ -319,6 +319,7 @@ and check `https://localhost` in your browser.
 NOTE: the first time it will ask you about installing localhost certificate. For more info check [this](https://github.com/daquinoaldo/https-localhost#root-required)
 
 ## Usage
+## Deploying on Node v18.15.0
 
 You can use this template by just pressing `Use this template`.
 

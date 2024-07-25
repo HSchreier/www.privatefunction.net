@@ -46,7 +46,8 @@
     "react-helmet-async": "^2.0.3",
     "react-hotkeys-hook": "^4.4.1",
     "react-router-dom": "^6.21.0",
-    "recoil": "^0.7.7"
+    "recoil": "^0.7.7",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.40.1",
@@ -79,7 +80,9 @@
   },
   "rules": {
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": ["warn"]
+    "@typescript-eslint/no-unused-vars": [
+      "warn"
+    ]
   },
   "author": {
     "name": "Suren Atoyan",

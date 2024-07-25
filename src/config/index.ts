@@ -2,11 +2,11 @@ import isMobile from '@/utils/is-mobile';
 
 import type { Notifications } from './types';
 
-const title = 'React PWA';
+const title = 'Privatefunction';
 
-const email = 'auther-email@gmail.com';
+const email = 'helle@privatefunction.net';
 
-const repository = 'https://github.com/suren-atoyan/react-pwa';
+const repository = 'https://github.com/HSchreier/www.privatefunction.net';
 
 const messages = {
   app: {

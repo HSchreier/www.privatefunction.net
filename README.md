@@ -5,18 +5,18 @@
  <img src="./public/cover.png" title="Base App">
 </a>
 
-# React-PWA - `v2` is here 🚀🎉⚡️
+# Privatefunction.net
+# on React-PWA - `v2` 🚀🎉⚡️
 
-**Starter kit for modern web applications!**
 
 ## Synopsis
 
-This project (a GitHub template) is an opinionated setup for modern web applications.
+This project is my personal Website where based on a GitHub template. its an opinionated setup for modern  applications.
 It's a combination of essential (and minimal) libraries/components/utils/dev-tools/etc., which developers usually need during the process of making modern React applications.
 
 ## Motivation
 
-Almost all projects need to have a router, a UI framework, store integration, theming, error handling, base file/folder structure, a builder, some developer tools (eslint, prettier, etc), tests and many more. In this starter kit, we tried to put together the best options available from the above-mentioned fields. Out of the box, it provides a modern production-ready setup created by developers for developers 💚
+i need a new website and oll try to create a state of the art experience
 
 ### Tech stack
 
@@ -319,6 +319,7 @@ and check `https://localhost` in your browser.
 NOTE: the first time it will ask you about installing localhost certificate. For more info check [this](https://github.com/daquinoaldo/https-localhost#root-required)
 
 ## Usage
+## Deploying on Node v18.15.0
 
 You can use this template by just pressing `Use this template`.
 

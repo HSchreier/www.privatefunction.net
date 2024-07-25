@@ -48,7 +48,7 @@ const loader = {
 
 const defaultMetaTags = {
   image: '/cover.png',
-  description: 'Starter kit for modern web applications',
+  description: 'Helmut has a website about Tech, Music & his stuff.....',
 };
 const giphy404 = 'https://giphy.com/embed/xTiN0L7EW5trfOvEk0';
 

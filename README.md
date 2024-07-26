@@ -13,12 +13,12 @@
 
 ## Synopsis
 
-This project is my personal Website where based on a GitHub template. its an opinionated setup for modern  applications.
+This project is my personal Website based on a GitHub template.
 It's a combination of essential (and minimal) libraries/components/utils/dev-tools/etc., which developers usually need during the process of making modern React applications.
 
 ## Motivation
 
-i need a new website and oll try to create a state of the art experience
+i need a new website and i'll try to create a state of the art experience
 
 ### Tech stack
 

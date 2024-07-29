@@ -5,6 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 
 import { withErrorHandler } from '@/error-handling';
 import AppErrorBoundaryFallback from '@/error-handling/fallbacks/App';
+import Header from '@/sections/Header';
 import Pages from '@/routes/Pages';
 import Footer from '@/sections/Footer';
 import Notifications from '@/sections/Notifications';
@@ -17,6 +18,7 @@ function App() {
       <Notifications />
       <SW />
       <BrowserRouter>
+        <Header />
         <Pages />
         <Footer />
       </BrowserRouter>

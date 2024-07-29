@@ -41,7 +41,17 @@ function Header() {
   }
 
   return (
-    <Box sx={{ flexGrow: 1 }} data-pw={`theme-${theme}`}>
+    <Box
+      sx={{
+        flexGrow: 1,
+        zIndex: 1,
+        top: 0,
+        width: '100%',
+        color: '#000000',
+        position: 'fixed',
+      }}
+      data-pw={`theme-${theme}`}
+    >
       <AppBar color="transparent" elevation={1} position="static">
         <Toolbar sx={{ justifyContent: 'space-between' }}>
           <FlexBox sx={{ alignItems: 'center' }}>

@@ -4,9 +4,12 @@ import { type Container } from '@tsparticles/engine';
 import { loadSlim } from '@tsparticles/slim';
 
 import Meta from '@/components/Meta';
-import { FullSizeCenteredFlexBox } from '@/components/styled';
+import { FullSizeCenteredFlexBox, CenteredFlexBox } from '@/components/styled';
 import useOrientation from '@/hooks/useOrientation';
-import Typography from '@mui/material/Typography';
+
+import pfLogo from './logos/pf-logo-no-background.svg';
+
+import { Image } from './styled';
 
 function Welcome() {
   const isPortrait = useOrientation();
@@ -35,11 +38,12 @@ function Welcome() {
     () => ({
       background: {
         color: {
-          value: '#000000',
+          value: '#ffffff',
         },
       },
       fpsLimit: 120,
       interactivity: {
+        detect_on: 'canvas',
         events: {
           onClick: {
             enable: true,
@@ -48,6 +52,12 @@ function Welcome() {
           onHover: {
             enable: true,
             mode: 'repulse',
+          },
+          onDiv: {
+            enable: true,
+            selectors: '.bouncerectangle',
+            mode: 'bounce',
+            type: 'rectangle',
           },
         },
         modes: {
@@ -62,10 +72,10 @@ function Welcome() {
       },
       particles: {
         color: {
-          value: ['#2EB67D', '#ECB22E', '#E01E5B', '#36C5F0'],
+          value: ['#0079FF', '#00DFA2', '#F6FA70', '#FF0060'],
         },
         links: {
-          color: '#ffffff',
+          color: '#D3D3D3',
           distance: 150,
           enable: true,
           opacity: 0.5,
@@ -106,9 +116,12 @@ function Welcome() {
       <>
         <Meta title="Welcome" />
         <FullSizeCenteredFlexBox flexDirection={isPortrait ? 'column' : 'row'}>
-          <Typography variant="h3">Comming Soon ....</Typography>
+          <CenteredFlexBox>
+            <Image alt="logo privatefunction" src={pfLogo} />
+          </CenteredFlexBox>
           <Particles
-            id="tsparticles"
+            id="paticlesBG"
+            class="bouncerectangle"
             particlesLoaded={particlesLoaded}
             // @ts-expect-error: Should expect value
             options={options}

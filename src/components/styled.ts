@@ -13,6 +13,12 @@ const CenteredFlexBox = styled(FlexBox)({
 const FullSizeCenteredFlexBox = styled(CenteredFlexBox)({
   width: '100%',
   height: '100%',
+  '& paticlesBG': {
+    position: 'absolute',
+    width: '100%',
+    height: '100%',
+    zIndex: '9999',
+  },
 });
 
 export { FlexBox, CenteredFlexBox, FullSizeCenteredFlexBox };

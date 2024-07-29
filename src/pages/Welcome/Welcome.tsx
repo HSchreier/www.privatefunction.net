@@ -38,7 +38,7 @@ function Welcome() {
     () => ({
       background: {
         color: {
-          value: '#ffffff',
+          value: '#F9F9F8',
         },
       },
       fpsLimit: 120,

@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/HSchreier/www.privatefunction.net.git"
   },
+  "publishConfig": {
+    "registry": "https://github.com/HSchreier/www.privatefunction.net"
+  },
   "bugs": {
     "url": "https://github.com/HSchreier/www.privatefunction.net/issues",
     "email": "contact@privatefunction.net"

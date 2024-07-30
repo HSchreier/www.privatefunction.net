@@ -18,6 +18,6 @@ jobs:
           node-version: '18.15.0'
       - run: yarn install
       - run: yarn build
-      - run: yarn publish dist 
+      - run: yarn publish 
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

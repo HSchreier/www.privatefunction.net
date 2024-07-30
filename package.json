@@ -27,7 +27,8 @@
     "ts:check": "tsc --noEmit",
     "test:unit": "vitest",
     "test:e2e": "playwright test",
-    "test:e2e:ui": "playwright test --ui"
+    "test:e2e:ui": "playwright test --ui",
+    "postbuild": "cp package.json dist"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",

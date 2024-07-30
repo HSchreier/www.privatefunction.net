@@ -13,9 +13,12 @@ import { Image } from './styled';
 
 import Tilt from 'react-parallax-tilt';
 
+import useTheme from '@/store/theme';
+
 function Welcome() {
   const isPortrait = useOrientation();
-
+  const [theme] = useTheme();
+  console.log(theme);
   const [init, setInit] = useState(false);
 
   useEffect(() => {

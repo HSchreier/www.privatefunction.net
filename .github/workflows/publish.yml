@@ -3,9 +3,6 @@ on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
     branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 jobs:
   build:
@@ -14,13 +11,22 @@ jobs:
       contents: read
       packages: write
     steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@master
+        with:
+          persist-credentials: false
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 18.15.0
           cache: 'yarn'
           registry-url: 'https://npm.pkg.github.com'
-      - run: yarn
-      - run: yarn publish
+      - name: Install 🔧
+        run: yarn install
+
+      - name: Build 🏗️
+        run: |
+          yarn clean
+          yarn build
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

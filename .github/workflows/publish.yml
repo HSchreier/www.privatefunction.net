@@ -5,11 +5,8 @@ on:
     branches: [ "master" ]
   workflow_dispatch:
 jobs:
-  build:
+  build-deployGHP:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@master
@@ -23,9 +20,9 @@ jobs:
           registry-url: 'https://npm.pkg.github.com'
       - name: Install 🔧
         run: yarn install
-
       - name: Build 🏗️
         run: 
           yarn build
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          publish_dir: ./dist

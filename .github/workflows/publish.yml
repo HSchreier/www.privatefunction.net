@@ -24,4 +24,4 @@ jobs:
       - name: publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn publish --registry https://npm.pkg.github.com --verbose
+          run: yarn publish --registry https://npm.pkg.github.com --verbose

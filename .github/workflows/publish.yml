@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18.15.0
-          cache: 'yarn'
+          cache: 'npm'
           registry-url: 'https://npm.pkg.github.com'
       - run: yarn install --production --frozen-lockfile
       - name: publish

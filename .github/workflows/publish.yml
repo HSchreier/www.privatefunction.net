@@ -21,6 +21,6 @@ jobs:
           scope: '@octocat'
       - run: yarn install
       - run: yarn build
-      - run: yarn publish
+      - run: yarn publish dist/ --no-git-tag-version
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

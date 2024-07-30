@@ -4,12 +4,14 @@ import { type Container } from '@tsparticles/engine';
 import { loadSlim } from '@tsparticles/slim';
 
 import Meta from '@/components/Meta';
-import { FullSizeCenteredFlexBox, CenteredFlexBox } from '@/components/styled';
+import { FullSizeCenteredFlexBox } from '@/components/styled';
 import useOrientation from '@/hooks/useOrientation';
 
 import pfLogo from './logos/pf-logo-no-background.svg';
 
 import { Image } from './styled';
+
+import Tilt from 'react-parallax-tilt';
 
 function Welcome() {
   const isPortrait = useOrientation();
@@ -116,9 +118,17 @@ function Welcome() {
       <>
         <Meta title="Welcome" />
         <FullSizeCenteredFlexBox flexDirection={isPortrait ? 'column' : 'row'}>
-          <CenteredFlexBox>
-            <Image alt="logo privatefunction" src={pfLogo} />
-          </CenteredFlexBox>
+          <Tilt
+            gyroscope={true}
+            className="parallax-effect-img"
+            tiltMaxAngleX={40}
+            tiltMaxAngleY={40}
+            perspective={800}
+            transitionSpeed={1500}
+            scale={1.1}
+          >
+            <Image className="inner-element" alt="logo privatefunction" src={pfLogo} />
+          </Tilt>
           <Particles
             id="paticlesBG"
             class="bouncerectangle"

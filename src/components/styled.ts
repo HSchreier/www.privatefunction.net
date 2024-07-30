@@ -19,6 +19,12 @@ const FullSizeCenteredFlexBox = styled(CenteredFlexBox)({
     height: '100%',
     zIndex: '9999',
   },
+  '& .parallax-effect-img': {
+    position: 'absolute',
+    width: '75%',
+    marginLeft: '25%',
+    zIndex: '1',
+  },
 });
 
 export { FlexBox, CenteredFlexBox, FullSizeCenteredFlexBox };

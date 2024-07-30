@@ -8,6 +8,10 @@ const email = 'helle@privatefunction.net';
 
 const repository = 'https://github.com/HSchreier/www.privatefunction.net';
 
+const linkedin = 'https://www.linkedin.com/in/helmutschreier';
+
+const twitter = 'https://x.com/silentium';
+
 const messages = {
   app: {
     crash: {
@@ -58,6 +62,8 @@ export {
   dateFormat,
   messages,
   repository,
+  linkedin,
+  twitter,
   email,
   title,
   defaultMetaTags,

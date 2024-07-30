@@ -1,9 +1,11 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import XIcon from '@mui/icons-material/X';
 import Box from '@mui/material/Box';
 import { FlexBox } from '@/components/styled';
 import IconButton from '@mui/material/IconButton';
 import useTheme from '@/store/theme';
-import { repository } from '@/config';
+import { repository, linkedin, twitter } from '@/config';
 
 function Footer() {
   const [theme] = useTheme();
@@ -22,6 +24,12 @@ function Footer() {
       <FlexBox sx={{ display: 'flex', justifyContent: 'flex-end', marginRight: '2%' }}>
         <IconButton color="info" size="large" component="a" href={repository} target="_blank">
           <GitHubIcon />
+        </IconButton>
+        <IconButton color="info" size="large" component="a" href={linkedin} target="_blank">
+          <LinkedInIcon />
+        </IconButton>
+        <IconButton color="info" size="large" component="a" href={twitter} target="_blank">
+          <XIcon />
         </IconButton>
       </FlexBox>
     </Box>

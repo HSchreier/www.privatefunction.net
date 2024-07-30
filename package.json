@@ -28,7 +28,8 @@
     "test:unit": "vitest",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
-    "postbuild": "cp package.json dist"
+    "postbuild": "cp package.json dist",
+    "ghpublish":"yarn build && gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -42,8 +43,10 @@
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.5.0",
+    "gh-pages": "^6.1.1",
     "is-mobile": "^4.0.0",
     "notistack": "^3.0.1",
+    "push-dir": "^0.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-error-boundary": "^4.0.11",

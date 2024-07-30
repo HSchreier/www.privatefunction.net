@@ -114,3 +114,6 @@ cordova/apk/private_key.pepk
 cordova/private_key.pepk
 
 package-lock.json
+
+.idea
+.husky

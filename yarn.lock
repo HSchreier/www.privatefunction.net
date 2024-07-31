@@ -5908,16 +5908,16 @@ vite-node@1.6.0:
     picocolors "^1.0.0"
     vite "^5.0.0"
 
-vite-plugin-pwa@^0.17.4:
-  version "0.17.5"
-  resolved "https://registry.yarnpkg.com/vite-plugin-pwa/-/vite-plugin-pwa-0.17.5.tgz#e821c14ac776742e2921fea9833dd2664ad2969b"
-  integrity sha512-UxRNPiJBzh4tqU/vc8G2TxmrUTzT6BqvSzhszLk62uKsf+npXdvLxGDz9C675f4BJi6MbD2tPnJhi5txlMzxbQ==
+vite-plugin-pwa@^0.20.0:
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/vite-plugin-pwa/-/vite-plugin-pwa-0.20.0.tgz#1785c8cc8c11c89c0ba8c6557f29e2b58b14dd6d"
+  integrity sha512-/kDZyqF8KqoXRpMUQtR5Atri/7BWayW8Gp7Kz/4bfstsV6zSFTxjREbXZYL7zSuRL40HGA+o2hvUAFRmC+bL7g==
   dependencies:
     debug "^4.3.4"
     fast-glob "^3.3.2"
     pretty-bytes "^6.1.1"
-    workbox-build "^7.0.0"
-    workbox-window "^7.0.0"
+    workbox-build "^7.1.0"
+    workbox-window "^7.1.0"
 
 vite@^5.0.0, vite@^5.0.9:
   version "5.3.5"
@@ -6062,7 +6062,7 @@ workbox-broadcast-update@7.1.0:
   dependencies:
     workbox-core "7.1.0"
 
-workbox-build@^7.0.0:
+workbox-build@^7.1.0:
   version "7.1.1"
   resolved "https://registry.yarnpkg.com/workbox-build/-/workbox-build-7.1.1.tgz#bfbd4c44848c175b7773f921be3597cbfaaef827"
   integrity sha512-WdkVdC70VMpf5NBCtNbiwdSZeKVuhTEd5PV3mAwpTQCGAB5XbOny1P9egEgNdetv4srAMmMKjvBk4RD58LpooA==
@@ -6197,7 +6197,7 @@ workbox-sw@7.1.0:
   resolved "https://registry.yarnpkg.com/workbox-sw/-/workbox-sw-7.1.0.tgz#3df97d7cccb647eb94d66be7dc733c9fda26b9fc"
   integrity sha512-Hml/9+/njUXBglv3dtZ9WBKHI235AQJyLBV1G7EFmh4/mUdSQuXui80RtjDeVRrXnm/6QWgRUEHG3/YBVbxtsA==
 
-workbox-window@7.1.0, workbox-window@^7.0.0:
+workbox-window@7.1.0, workbox-window@^7.1.0:
   version "7.1.0"
   resolved "https://registry.yarnpkg.com/workbox-window/-/workbox-window-7.1.0.tgz#58a90ba89ca35d26f2b322223ee575c750bac7a1"
   integrity sha512-ZHeROyqR+AS5UPzholQRDttLFqGMwP0Np8MKWAdyxsDETxq3qOAyXvqessc3GniohG6e0mAqSQyKOHmT8zPF7g==

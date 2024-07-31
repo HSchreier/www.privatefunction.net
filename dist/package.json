@@ -29,7 +29,7 @@
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "postbuild": "cp package.json dist",
-    "ghpublish":"yarn build && gh-pages -d dist/"
+    "ghpublish":"yarn build && gh-pages -d dist master"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",

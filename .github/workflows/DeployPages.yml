@@ -3,11 +3,7 @@
 name: Deploy Dev Workflow to GHPages 
 
 on:
-  # Runs on pushes targeting the dev branch
-  push:
-    branches: ['master']
-
-  # Allows you to run this workflow manually from the Actions tab
+  # Manuallytrigger
   workflow_dispatch:
 
 # Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages

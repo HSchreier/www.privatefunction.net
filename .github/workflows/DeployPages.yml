@@ -1,9 +1,9 @@
 # Simple dev workflow for deploying static content to GitHub Pages
 
-name: Deploy Dev to GHPages 
+name: Deploy Dev Workflow to GHPages 
 
 on:
-  # Runs on pushes targeting the default branch
+  # Runs on pushes targeting the dev branch
   push:
     branches: ['master']
 

@@ -116,3 +116,4 @@ cordova/private_key.pepk
 
 .idea/
 .husky/
+.proddeploy.yml

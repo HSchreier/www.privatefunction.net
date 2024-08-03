@@ -3,6 +3,9 @@
 name: Deploy Dev Workflow to GHPages 
 
 on:
+  push:
+    branches:
+      - github-pages
   # Manual trigger for now
   workflow_dispatch:
 

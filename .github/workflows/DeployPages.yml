@@ -21,7 +21,6 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  name: Publish to GH PAges
   deploy:
     environment:
       name: github-pages

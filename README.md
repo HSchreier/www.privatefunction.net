@@ -258,6 +258,12 @@ npm run test:e2e:ui # or yarn test:e2e:ui
 
 [playwright.config.ts](./playwright.config.ts) contains the configuration for e2e tests. Currently, it's configured to run tests in `chromium`, `firefox` and `webkit` browsers. You can add more browsers if you want.
 
+### Integration & Delivery Worklows
+<img src="./public/ghwfpf.png" title="Workflow">
+
+WIP
+
+
 #### GitHub Actions
 
 There are 2 GitHub Actions workflows:
@@ -363,11 +369,6 @@ There are other scripts as well:
 - `https-preview` - is the same as `preview`, but with HTTPS. It's handy for testing your PWA capabilities in your local environment.
 - `prepare` - install `husky` and copy the default `env/.shared` file to `.env` file. This script is being run automatically after `npm install` or `yarn`.
 
-## [Live Demo](https://react-pwa.surenatoyan.com/)
-
-<div>
- <img src="./public/demo-dark.png" width="280" title="Dark demo"> <img src="./public/demo-light.png" width="280" title="Light demo">
-</div>
 
 ## License
 

@@ -2,7 +2,7 @@
 [![Depfu](https://badges.depfu.com/badges/0e245a832d966b2e8180ec9a0ce334b5/overview.svg)](https://depfu.com/github/HSchreier/www.privatefunction.net?project_id=42679)
 [![analyses](https://github.com/HSchreier/www.privatefunction.net/actions/workflows/analyses.yml/badge.svg)](https://github.com/HSchreier/www.privatefunction.net/actions/workflows/analyses.yml)
 [![e2e tests](https://github.com/HSchreier/www.privatefunction.net/actions/workflows/tests:e2e.yml/badge.svg)](https://github.com/HSchreier/www.privatefunction.net/actions/workflows/tests:e2e.yml)
-[![Deploy DEV to Pages](https://github.com/HSchreier/www.privatefunction.net/actions/workflows/DeployPages.yml/badge.svg)](https://github.com/HSchreier/www.privatefunction.net/actions/workflows/DeployPages.yml)
+[![Deploy Dev Workflow to GHPages](https://github.com/HSchreier/www.privatefunction.net/actions/workflows/DeployPages.yml/badge.svg?branch=gh-pages)](https://github.com/HSchreier/www.privatefunction.net/actions/workflows/DeployPages.yml)
 
 <a href="http://react-pwa.surenatoyan.com/" target="_blank" rel="noreferrer">
  <img src="./public/cover.png" title="Base App">

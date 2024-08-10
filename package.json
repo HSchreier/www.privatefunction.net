@@ -34,7 +34,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.15.0",
     "@mui/lab": "5.0.0-alpha.156",
-    "@mui/material": "^5.15.0",
+    "@mui/material": "^5.16.7",
     "@mui/system": "^5.15.0",
     "@mui/utils": "^5.15.0",
     "@tsparticles/confetti": "^3.5.0",

@@ -258,7 +258,7 @@ npm run test:e2e:ui # or yarn test:e2e:ui
 
 [playwright.config.ts](./playwright.config.ts) contains the configuration for e2e tests. Currently, it's configured to run tests in `chromium`, `firefox` and `webkit` browsers. You can add more browsers if you want.
 
-### Integration & Delivery Worklows
+### Integration & Delivery Workflows
 <img src="./public/ghwfpf.png" title="Workflow">
 
 WIP

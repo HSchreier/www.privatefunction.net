@@ -4,8 +4,7 @@ name: Deploy Dev Workflow to GHPages
 on:
   push:
     branches:
-      - -dev
-      - github-pages
+      - dev
   # Manual trigger for now
   workflow_dispatch:
 # Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages

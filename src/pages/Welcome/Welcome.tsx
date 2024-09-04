@@ -31,7 +31,7 @@ function Welcome() {
             <CloudBackground />
 
             {/* 3D Model */}
-            <ObjModel url="./logo3.obj" scale={0.005} />
+            <ObjModel url="./logo3.obj" scale={0.005} position={[-2, 0, 0]} />
           </group>
 
           <OrbitControls />

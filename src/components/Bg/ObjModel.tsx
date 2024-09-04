@@ -1,8 +1,9 @@
 // ObjModel.tsx
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import { useLoader } from '@react-three/fiber';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
-import { Mesh, Box3, Vector3 } from 'three';
+import * as THREE from 'three';
+import { Mesh, MeshBasicMaterial } from 'three';
 
 type ObjModelProps = {
   url: string;
@@ -12,19 +13,30 @@ type ObjModelProps = {
 const ObjModel: React.FC<ObjModelProps> = ({ url, scale = 1 }) => {
   const obj = useLoader(OBJLoader, url);
   const ref = useRef<Mesh>(null);
+  const [centerOffset, setCenterOffset] = useState<number>(0);
 
   useEffect(() => {
-    // Calculate the bounding box of the model
-    const box = new Box3().setFromObject(obj);
-    const center = new Vector3();
-    box.getCenter(center);
+    if (obj) {
+      // Calculate the bounding box of the object for centering
+      const boundingBox = new THREE.Box3().setFromObject(obj);
+      const size = new THREE.Vector3();
+      boundingBox.getSize(size);
+      const width = size.x;
+      const offsetX = width / 2;
+      setCenterOffset(offsetX);
 
-    // Adjust the position so the object is centered
-    obj.position.sub(center);
+      // Apply a black material to the entire object
+      obj.traverse((child) => {
+        if ((child as Mesh).isMesh) {
+          (child as Mesh).material = new MeshBasicMaterial({ color: 'black' });
+        }
+      });
+    }
   }, [obj]);
 
   return (
-    <mesh ref={ref} scale={scale}>
+    // eslint-disable-next-line react/no-unknown-property
+    <mesh ref={ref} position={[-centerOffset, 0, 0]} scale={scale}>
       {/* eslint-disable-next-line */}
       <primitive object={obj} />
     </mesh>

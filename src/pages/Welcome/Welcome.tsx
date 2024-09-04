@@ -18,7 +18,7 @@ function Welcome() {
             gl.setClearColor('lightblue'); // Set background color here
           }}
           shadows
-          camera={{ position: [0, 1.5, 8], fov: 35 }}
+          camera={{ position: [0, 1.5, 12], fov: 35 }}
         >
           {/* eslint-disable-next-line */}
           <ambientLight intensity={1} />

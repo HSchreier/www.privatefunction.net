@@ -12,7 +12,7 @@ function Welcome() {
   return (
     <>
       <Meta title="Welcome" />
-      <GlobalStyles styles={{}} />
+      <GlobalStyles styles={{ background: '#ffffff' }} />
       <FullSizeCenteredFlexBox flexDirection={isPortrait ? 'column' : 'row'}>
         <Canvas shadows camera={{ position: [0, 1.5, 8], fov: 35 }}>
           {/* eslint-disable-next-line */}

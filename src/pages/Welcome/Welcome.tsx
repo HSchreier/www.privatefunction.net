@@ -31,6 +31,7 @@ function Welcome() {
             <CloudBackground />
 
             {/* 3D Model */}
+            {/* eslint-disable-next-line */}
             <ObjModel url="./logo3.obj" scale={0.005} />
           </group>
 

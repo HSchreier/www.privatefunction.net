@@ -1,7 +1,6 @@
 import Meta from '@/components/Meta';
 import { FullSizeCenteredFlexBox } from '@/components/styled';
 import useOrientation from '@/hooks/useOrientation';
-import { GlobalStyles } from '@mui/material';
 import CloudBackground from '@/components/Bg/CloudBackground';
 import ObjModel from '@/components/Bg/ObjModel';
 import { Canvas } from '@react-three/fiber';
@@ -12,11 +11,17 @@ function Welcome() {
   return (
     <>
       <Meta title="Welcome" />
-      <GlobalStyles styles={{ background: '#ffffff' }} />
-      <FullSizeCenteredFlexBox flexDirection={isPortrait ? 'column' : 'row'}>
-        <Canvas shadows camera={{ position: [0, 1.5, 8], fov: 35 }}>
+      <FullSizeCenteredFlexBox flexDirection={isPortrait ? 'column' : 'row'} height="100vh">
+        <Canvas
+          gl={{ preserveDrawingBuffer: true }}
+          onCreated={({ gl }) => {
+            gl.setClearColor('lightblue'); // Set background color here
+          }}
+          shadows
+          camera={{ position: [0, 1.5, 8], fov: 35 }}
+        >
           {/* eslint-disable-next-line */}
-          <ambientLight intensity={0.5} />
+          <ambientLight intensity={1} />
           {/* eslint-disable-next-line */}
           <pointLight position={[10, 10, 10]} />
 

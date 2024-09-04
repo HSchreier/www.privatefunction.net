@@ -18,10 +18,20 @@ function Footer() {
         width: '100%',
         color: '#000000',
         position: 'fixed',
+        backgroundColor: 'transparent',
       }}
       data-pw={`theme-${theme}`}
     >
-      <FlexBox sx={{ display: 'flex', justifyContent: 'flex-end', marginRight: '2%' }}>
+      <FlexBox
+        sx={{
+          display: 'flex',
+          justifyContent: 'flex-end',
+          marginRight: '2%',
+          backgroundColor: 'transparent',
+          position: 'realtive',
+          overflow: 'hidden',
+        }}
+      >
         <IconButton
           title="Github"
           color="info"

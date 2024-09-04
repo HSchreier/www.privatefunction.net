@@ -30,13 +30,15 @@
     "test:e2e:ui": "playwright test --ui"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
     "@mui/icons-material": "^5.15.0",
     "@mui/lab": "5.0.0-alpha.156",
-    "@mui/material": "^5.15.0",
+    "@mui/material": "^6.0.1",
     "@mui/system": "^5.15.0",
     "@mui/utils": "^5.15.0",
+    "@react-three/drei": "^9.111.5",
+    "@react-three/fiber": "^8.17.6",
     "@tsparticles/confetti": "^3.5.0",
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
@@ -52,6 +54,8 @@
     "react-parallax-tilt": "^1.7.235",
     "react-router-dom": "^6.21.0",
     "recoil": "^0.7.7",
+    "simplex-noise": "^4.0.3",
+    "three": "^0.168.0",
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
@@ -70,7 +74,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.8",
     "prettier": "3.1.1",
-    "typescript": "^5.3.3",
+    "typescript": "^5.5.4",
     "vite": "^5.0.9",
     "vite-plugin-pwa": "^0.17.4",
     "vitest": "^1.1.3"

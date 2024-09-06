@@ -52,11 +52,12 @@ const Birds = () => {
     birdMesh.current.instanceMatrix.needsUpdate = true;
   });
 
+  // Use a default geometry (BoxGeometry) and assign a valid BufferGeometry to instancedMesh
+  const geometry = new THREE.BoxGeometry(0.1, 0.1, 0.1);
+
   return (
     // eslint-disable-next-line
-    <instancedMesh ref={birdMesh} args={[null, null, birdCount]}>
-      {/* eslint-disable-next-line */}
-      <boxGeometry args={[0.1, 0.1, 0.1]} /> {/* Updated to boxGeometry */}
+    <instancedMesh ref={birdMesh} args={[geometry, null, birdCount]}>
       <meshBasicMaterial color={'black'} />
     </instancedMesh>
   );

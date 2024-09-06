@@ -9,7 +9,7 @@ import { OrbitControls } from '@react-three/drei';
 function Welcome() {
   const isPortrait = useOrientation();
   const r = (Math.random() + 1).toString(36).substring(7);
-  const uri = './logo3.obj?=' + r.toString();
+  const uri = './logo3.obj?v=' + r.toString();
   return (
     <>
       <Meta title="Welcome" />

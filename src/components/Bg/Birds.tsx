@@ -4,7 +4,7 @@ import * as THREE from 'three';
 
 const Birds = () => {
   const birdMesh = useRef<THREE.InstancedMesh>(null);
-  const birdCount = 200;
+  const birdCount = 100;
 
   // Position, velocity, and direction of each bird (simulating the birds)
   const birdData = useMemo(() => {
@@ -13,16 +13,16 @@ const Birds = () => {
     for (let i = 0; i < birdCount; i++) {
       positions.push(
         new THREE.Vector3(
-          (Math.random() - 0.5) * 20,
-          (Math.random() - 0.5) * 20,
-          (Math.random() - 0.5) * 20,
+          (Math.random() - 0.5) * 5, // Smaller range for X
+          (Math.random() - 0.5) * 5, // Smaller range for Y
+          (Math.random() - 0.5) * 5, // Smaller range for Z
         ),
       );
       velocities.push(
         new THREE.Vector3(
-          (Math.random() - 0.5) * 0.1,
-          (Math.random() - 0.5) * 0.1,
-          (Math.random() - 0.5) * 0.1,
+          (Math.random() - 0.5) * 0.005, // Smaller velocity for X
+          (Math.random() - 0.5) * 0.005, // Smaller velocity for Y
+          (Math.random() - 0.5) * 0.005, // Smaller velocity for Z
         ),
       );
     }
@@ -38,11 +38,11 @@ const Birds = () => {
       birdData.positions[i].add(birdData.velocities[i]);
 
       // Wrap birds around the scene
-      if (birdData.positions[i].x > 10 || birdData.positions[i].x < -10)
+      if (birdData.positions[i].x > 5 || birdData.positions[i].x < -5)
         birdData.velocities[i].x *= -1;
-      if (birdData.positions[i].y > 10 || birdData.positions[i].y < -10)
+      if (birdData.positions[i].y > 5 || birdData.positions[i].y < -5)
         birdData.velocities[i].y *= -1;
-      if (birdData.positions[i].z > 10 || birdData.positions[i].z < -10)
+      if (birdData.positions[i].z > 5 || birdData.positions[i].z < -5)
         birdData.velocities[i].z *= -1;
 
       tempObject.position.copy(birdData.positions[i]);
@@ -52,8 +52,8 @@ const Birds = () => {
     birdMesh.current.instanceMatrix.needsUpdate = true;
   });
 
-  // Create a default BoxGeometry and MeshBasicMaterial
-  const geometry = new THREE.BoxGeometry(0.1, 0.1, 0.1);
+  // Create a TetrahedronGeometry for the birds
+  const geometry = new THREE.TetrahedronGeometry(0.1); // Smaller tetrahedron size
   const material = new THREE.MeshBasicMaterial({ color: 'black' });
 
   return (

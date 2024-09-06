@@ -1,4 +1,4 @@
-// LogoObject.tsx
+// MainLogoObj.tsx
 import React, { useRef, useEffect, useState } from 'react';
 import { useLoader } from '@react-three/fiber';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
@@ -35,6 +35,7 @@ const MainLogoObj: React.FC<ObjModelProps> = ({ url, scale = 1 }) => {
     }
   }, [obj]);
   if (centerOffset > 1) {
+    // quick fix for not getting propper coords on fast page reload
     setCenterOffset(0.791104965209961);
   }
   return (

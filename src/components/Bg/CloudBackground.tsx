@@ -1,3 +1,4 @@
+// components/CloudBackground.tsx
 import React from 'react';
 import { Cloud } from '@react-three/drei';
 

@@ -3,6 +3,7 @@ import { FullSizeCenteredFlexBox } from '@/components/styled';
 import useOrientation from '@/hooks/useOrientation';
 import CloudBackground from '@/components/Bg/CloudBackground';
 import MainLogoObj from './MainLogoObj';
+import Birds from '@/components/Bg/Birds'; // Import Birds component
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 
@@ -10,6 +11,7 @@ function Welcome() {
   const isPortrait = useOrientation();
   const r = (Math.random() + 1).toString(36).substring(7);
   const uri = './logo3.obj?v=' + r.toString();
+
   return (
     <>
       <Meta title="Welcome" />
@@ -27,14 +29,10 @@ function Welcome() {
           {/* eslint-disable-next-line */}
           <pointLight position={[10, 10, 10]} />
 
-          {/* Rotate the entire scene by 90 degrees to the left around the Y-axis */}
           <group>
-            {/* Clouds Background */}
             <CloudBackground />
-
-            {/* 3D Model */}
-
             <MainLogoObj url={uri} scale={0.005} />
+            <Birds /> {/* Render birds */}
           </group>
 
           <OrbitControls />

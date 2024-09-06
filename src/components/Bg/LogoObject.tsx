@@ -1,4 +1,4 @@
-// ObjModel.tsx
+// LogoObject.tsx
 import React, { useRef, useEffect, useState } from 'react';
 import { useLoader } from '@react-three/fiber';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader';
@@ -10,7 +10,7 @@ type ObjModelProps = {
   scale?: number | [number, number, number];
 };
 
-const ObjModel: React.FC<ObjModelProps> = ({ url, scale = 1 }) => {
+const LogoObject: React.FC<ObjModelProps> = ({ url, scale = 1 }) => {
   const obj = useLoader(OBJLoader, url);
   const ref = useRef<Mesh>(null);
   const [centerOffset, setCenterOffset] = useState<number>(0);
@@ -43,4 +43,4 @@ const ObjModel: React.FC<ObjModelProps> = ({ url, scale = 1 }) => {
   );
 };
 
-export default ObjModel;
+export default LogoObject;

@@ -2,7 +2,7 @@ import Meta from '@/components/Meta';
 import { FullSizeCenteredFlexBox } from '@/components/styled';
 import useOrientation from '@/hooks/useOrientation';
 import CloudBackground from '@/components/Bg/CloudBackground';
-import LogoObject from '@/components/Bg/LogoObject';
+import MainLogoObj from './MainLogoObj';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 
@@ -34,7 +34,7 @@ function Welcome() {
 
             {/* 3D Model */}
 
-            <LogoObject url={uri} scale={0.005} />
+            <MainLogoObj url={uri} scale={0.005} />
           </group>
 
           <OrbitControls />

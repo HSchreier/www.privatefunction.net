@@ -10,7 +10,7 @@ type ObjModelProps = {
   scale?: number | [number, number, number];
 };
 
-const LogoObject: React.FC<ObjModelProps> = ({ url, scale = 1 }) => {
+const MainLogoObj: React.FC<ObjModelProps> = ({ url, scale = 1 }) => {
   const obj = useLoader(OBJLoader, url);
   const ref = useRef<Mesh>(null);
   const [centerOffset, setCenterOffset] = useState<number>(0);
@@ -43,4 +43,4 @@ const LogoObject: React.FC<ObjModelProps> = ({ url, scale = 1 }) => {
   );
 };
 
-export default LogoObject;
+export default MainLogoObj;

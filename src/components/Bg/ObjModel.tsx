@@ -35,7 +35,7 @@ const ObjModel: React.FC<ObjModelProps> = ({ url, scale = 1 }) => {
   }, [obj]);
 
   return (
-    // eslint-disable-next-line react/no-unknown-property
+    // eslint-disable-next-line
     <mesh ref={ref} position={[-centerOffset, 0, 0]} scale={scale}>
       {/* eslint-disable-next-line */}
       <primitive object={obj} />

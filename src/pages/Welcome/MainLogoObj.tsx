@@ -23,6 +23,7 @@ const MainLogoObj: React.FC<ObjModelProps> = ({ url, scale = 1 }) => {
       boundingBox.getSize(size);
       const width = size.x;
       const offsetX = width / 2;
+
       setCenterOffset(offsetX);
 
       // Apply a black material to the entire object
@@ -33,7 +34,9 @@ const MainLogoObj: React.FC<ObjModelProps> = ({ url, scale = 1 }) => {
       });
     }
   }, [obj]);
-
+  if (centerOffset > 1) {
+    setCenterOffset(0.791104965209961);
+  }
   return (
     // eslint-disable-next-line
     <mesh ref={ref} position={[-centerOffset, 0, 0]} scale={scale}>

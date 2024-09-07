@@ -1581,12 +1581,12 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@playwright/test@^1.40.1":
-  version "1.45.3"
-  resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.45.3.tgz#22e9c38b3081d6674b28c6e22f784087776c72e5"
-  integrity sha512-UKF4XsBfy+u3MFWEH44hva1Q8Da28G6RFtR2+5saw+jgAFQV5yYnB1fu68Mz7fO+5GJF3wgwAIs0UelU8TxFrA==
+"@playwright/test@^1.47.0":
+  version "1.47.0"
+  resolved "https://registry.yarnpkg.com/@playwright/test/-/test-1.47.0.tgz#69fc55b10754147cc20021afbfa05747d4961bf0"
+  integrity sha512-SgAdlSwYVpToI4e/IH19IHHWvoijAYH5hu2MWSXptRypLSnzj51PcGD+rsOXFayde4P9ZLi+loXVwArg6IUkCA==
   dependencies:
-    playwright "1.45.3"
+    playwright "1.47.0"
 
 "@popperjs/core@^2.11.8":
   version "2.11.8"
@@ -5176,17 +5176,17 @@ pkg-types@^1.0.3, pkg-types@^1.1.1:
     mlly "^1.7.1"
     pathe "^1.1.2"
 
-playwright-core@1.45.3:
-  version "1.45.3"
-  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.45.3.tgz#e77bc4c78a621b96c3e629027534ee1d25faac93"
-  integrity sha512-+ym0jNbcjikaOwwSZycFbwkWgfruWvYlJfThKYAlImbxUgdWFO2oW70ojPm4OpE4t6TAo2FY/smM+hpVTtkhDA==
+playwright-core@1.47.0:
+  version "1.47.0"
+  resolved "https://registry.yarnpkg.com/playwright-core/-/playwright-core-1.47.0.tgz#b54ec060fd83e5c2e46b63986b5ebb5e96ace427"
+  integrity sha512-1DyHT8OqkcfCkYUD9zzUTfg7EfTd+6a8MkD/NWOvjo0u/SCNd5YmY/lJwFvUZOxJbWNds+ei7ic2+R/cRz/PDg==
 
-playwright@1.45.3:
-  version "1.45.3"
-  resolved "https://registry.yarnpkg.com/playwright/-/playwright-1.45.3.tgz#75143f73093a6e1467f7097083d2f0846fb8dd2f"
-  integrity sha512-QhVaS+lpluxCaioejDZ95l4Y4jSFCsBvl2UZkpeXlzxmqS+aABr5c82YmfMHrL6x27nvrvykJAFpkzT2eWdJww==
+playwright@1.47.0:
+  version "1.47.0"
+  resolved "https://registry.yarnpkg.com/playwright/-/playwright-1.47.0.tgz#fb9b028883fad11362f9ff63ce7ba44bda0bf626"
+  integrity sha512-jOWiRq2pdNAX/mwLiwFYnPHpEZ4rM+fRSQpRHwEwZlP2PUANvL3+aJOF/bvISMhFD30rqMxUB4RJx9aQbfh4Ww==
   dependencies:
-    playwright-core "1.45.3"
+    playwright-core "1.47.0"
   optionalDependencies:
     fsevents "2.3.2"
 

@@ -28,5 +28,9 @@
         "patterns": ["@mui/*/*/*"]
       }
     ]
-  }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }}  
 }

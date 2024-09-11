@@ -42,8 +42,7 @@ const WaterSky = () => {
       setSun(newSun);
 
       sky.material.uniforms['sunPosition'].value.copy(newSun);
-      waterRef.current!.material.uniforms['sunDirection'].value.copy(newSun).normalize();
-
+      waterRef.current!.material.uniforms['sunDirection'].value.copy(newSun).normalize(); // @ts-expect-error unkown
       const renderTarget = pmremGenerator.fromScene(sky);
       scene.environment = renderTarget.texture;
     };

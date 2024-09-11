@@ -63,9 +63,7 @@ const WaterSky = () => {
     }
   });
 
-  // ts-expect-error unkown
   return (
-    // ts-expect-error unkown
     <>
       {/* @ts-expect-error unkown*/}
       <water

@@ -36,11 +36,11 @@ const MainLogoObj: React.FC<ObjModelProps> = ({ url, scale = 1 }) => {
   }, [obj]);
   if (centerOffset > 1) {
     // quick fix for not getting propper coords on fast page reload
-    setCenterOffset(0.791104965209961);
+    setCenterOffset(0.891104965209961);
   }
   return (
     // eslint-disable-next-line
-    <mesh ref={ref} position={[-centerOffset, 0, 0]} scale={scale}>
+    <mesh ref={ref} position={[-6, 0, 0]} scale={scale}>
       {/* eslint-disable-next-line */}
       <primitive object={obj} />
     </mesh>

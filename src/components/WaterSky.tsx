@@ -10,9 +10,7 @@ import MainLogoObj from './MainLogoObj';
 extend({ Water, Sky });
 
 const WaterSky = () => {
-  {
-    /* @ts-expect-error unkown*/
-  }
+  /* @ts-expect-error unkown*/
   const waterRef = useRef<THREE.Water>(null);
   const meshRef = useRef<THREE.Mesh>(null);
   const { scene, gl } = useThree();
@@ -43,9 +41,7 @@ const WaterSky = () => {
 
       const newSun = new THREE.Vector3().setFromSphericalCoords(1, phi, theta);
       setSun(newSun);
-      {
-        /* @ts-expect-error unkown*/
-      }
+      /* @ts-expect-error unkown*/
       sky.material.uniforms['sunPosition'].value.copy(newSun);
       waterRef.current!.material.uniforms['sunDirection'].value.copy(newSun).normalize(); // @ts-expect-error unkown
       const renderTarget = pmremGenerator.fromScene(sky);

@@ -2,7 +2,7 @@
 import React from 'react';
 import { Canvas } from '@react-three/fiber';
 import WaterSky from '@/components//WaterSky';
-import { OrbitControls, Stats } from '@react-three/drei';
+import { OrbitControls } from '@react-three/drei';
 
 const OceanScene = () => {
   return (
@@ -13,7 +13,6 @@ const OceanScene = () => {
       <pointLight position={[100, 100, 100]} />
       <WaterSky />
       <OrbitControls maxPolarAngle={Math.PI * 0.495} minDistance={40} maxDistance={200} />
-      <Stats />
     </Canvas>
   );
 };

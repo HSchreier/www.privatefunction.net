@@ -40,7 +40,7 @@ const MainLogoObj: React.FC<ObjModelProps> = ({ url, scale = 1 }) => {
   }
   return (
     // eslint-disable-next-line
-    <mesh ref={ref} position={[-6, 0, 0]} scale={scale}>
+    <mesh ref={ref} position={[-12, 0, 0]} scale={scale}>
       {/* eslint-disable-next-line */}
       <primitive object={obj} />
     </mesh>

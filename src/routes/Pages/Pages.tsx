@@ -4,10 +4,15 @@ import Box from '@mui/material/Box';
 
 import routes from '..';
 import { getPageHeight } from './utils';
-
 function Pages() {
   return (
-    <Box sx={{ height: (theme) => getPageHeight(theme) }}>
+    <Box
+      sx={
+        /* prettier-ignore */
+        /* @ts-expect-error nuoob */
+        { height: (theme) => getPageHeight(theme) }
+      }
+    >
       <Routes>
         {Object.values(routes).map(({ path, component: Component }) => {
           return <Route key={path} path={path} element={<Component />} />;

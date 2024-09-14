@@ -22,9 +22,7 @@ function NotFound() {
             404 Not Found
           </Typography>
           <Divider variant="middle" />
-          <Typography variant="h4" sx={{ color: (theme) => theme.palette.info.main }}>
-            {messages[404]}
-          </Typography>
+          <Typography variant="h4">{messages[404]}</Typography>
         </CenteredFlexBox>
       </FullSizeCenteredFlexBox>
     </Container>

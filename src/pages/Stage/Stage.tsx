@@ -3,7 +3,7 @@ import { FullSizeCenteredFlexBox } from '@/components/styled';
 import useOrientation from '@/hooks/useOrientation';
 import OceanScene from './scenes/OceanScene';
 
-function Welcome() {
+function Stage() {
   const isPortrait = useOrientation();
 
   return (
@@ -16,4 +16,4 @@ function Welcome() {
   );
 }
 
-export default Welcome;
+export default Stage;

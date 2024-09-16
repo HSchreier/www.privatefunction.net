@@ -1,18 +1,21 @@
-// src/components/WaterSky.tsx
 import { useRef, useEffect, useState } from 'react';
 import * as THREE from 'three';
 import { useThree, extend, useFrame } from '@react-three/fiber';
 import { Water } from 'three-stdlib';
 import { Sky } from 'three-stdlib';
 import { useTexture } from '@react-three/drei';
+import { useCameraLight } from './CameraLightProvider'; // Import the hook
 import MainLogoObj from './MainLogoObj';
 
 extend({ Water, Sky });
 
 const WaterSky = () => {
+  // eslint-disable-next-line
+  const { ambientLight, pointLight } = useCameraLight(); // Access camera and lights
   /* @ts-expect-error unkown*/
   const waterRef = useRef<THREE.Water>(null);
   const meshRef = useRef<THREE.Mesh>(null);
+
   const { scene, gl } = useThree();
   const uri = './logo3.obj';
 
@@ -43,7 +46,8 @@ const WaterSky = () => {
       setSun(newSun);
       /* @ts-expect-error unkown*/
       sky.material.uniforms['sunPosition'].value.copy(newSun);
-      waterRef.current!.material.uniforms['sunDirection'].value.copy(newSun).normalize(); // @ts-expect-error unkown
+      waterRef.current!.material.uniforms['sunDirection'].value.copy(newSun).normalize();
+      // @ts-expect-error unkown
       const renderTarget = pmremGenerator.fromScene(sky);
       scene.environment = renderTarget.texture;
     };

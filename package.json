@@ -38,7 +38,7 @@
     "@mui/system": "^5.15.0",
     "@mui/utils": "^5.15.0",
     "@react-three/drei": "^9.111.5",
-    "@react-three/fiber": "^8.17.6",
+    "@react-three/fiber": "^8.17.10",
     "@tsparticles/confetti": "^3.5.0",
     "@tsparticles/engine": "^3.5.0",
     "@tsparticles/react": "^3.0.0",
